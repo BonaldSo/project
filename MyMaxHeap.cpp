@@ -7,7 +7,7 @@ using namespace std;
 
 
 // Heap implementation class.
-class CS240MaxHeap {
+class MaxHeap {
 
 private:
 	int k; // store key
