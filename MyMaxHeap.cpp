@@ -7,7 +7,7 @@ using namespace std;
 
 
 // Heap implementation class.
-class MaxHeap {
+class MyMaxHeap {
 
 private:
 	int k; // store key
@@ -246,7 +246,7 @@ private:
 
 
  public:
-     CS240MaxHeap(const int k)
+     MyMaxHeap(const int k)
          : k(k), num_items(0) {};
      
      // see the assignment description for specification of what these
@@ -335,7 +335,7 @@ private:
    
 
 int main() {
-    CS240MaxHeap* pq = nullptr;
+    MyMaxHeap* pq = nullptr;
     int k;
     int total_items = 0;
 
@@ -347,7 +347,7 @@ int main() {
         if (command == "r") {  // initializes heap with the max_capacity read from the input
             std::cin >> k;
 
-            pq = new CS240MaxHeap(k);
+            pq = new MyMaxHeap(k);
         }
         else if (command == "x") {  // finishes the program and cleans up
             delete pq;
